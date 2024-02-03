@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_tren">
+<!--Referencia a los distintos fragments de nuestra aplicación-->
+    <fragment
+        android:id="@+id/nav_estacion"
+        android:name="com.example.proyectofinal.ui.estacion.EstacionFragment"
+        android:label="@string/estaciones"
+        tools:layout="@layout/fragment_empleado" />
+
+    <fragment
+        android:id="@+id/nav_tren"
+        android:name="com.example.proyectofinal.ui.tren.TrenFragment"
+        android:label="@string/trenes"
+        tools:layout="@layout/fragment_tren" />
+
+    <fragment
+        android:id="@+id/nav_empleado"
+        android:name="com.example.proyectofinal.ui.empleado.EmpleadoFragment"
+        android:label="@string/empleados"
+        tools:layout="@layout/fragment_estacion" />
+</navigation>

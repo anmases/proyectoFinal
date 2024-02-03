@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.empleado.EmpleadoFormFragment">
+
+    <EditText
+        android:id="@+id/textEmpleadoNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="nombre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/multiSelectEstacion"
+        app:layout_constraintHorizontal_bias="0.5" />
+    <EditText
+        android:id="@+id/textEmpleadoPuesto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="puesto"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/multiSelectEstacion"
+        app:layout_constraintTop_toBottomOf="@id/textEmpleadoNombre"/>
+
+    <Spinner
+        android:id="@+id/multiSelectEstacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="estación"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textEmpleadoContratado"
+        app:layout_constraintTop_toBottomOf="@+id/textEmpleadoPuesto"
+        />
+
+    <EditText
+        android:id="@+id/textEmpleadoContratado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="contratado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiSelectEstacion" />
+
+    <Button
+        android:id="@+id/submitEmpleadoButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Añadir"
+        app:layout_constraintEnd_toStartOf="@+id/cancelEmpleadoButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmpleadoContratado" />
+    <Button
+        android:id="@+id/cancelEmpleadoButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/submitEmpleadoButton"
+        app:layout_constraintTop_toBottomOf="@+id/textEmpleadoContratado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

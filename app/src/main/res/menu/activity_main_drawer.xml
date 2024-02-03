@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<!--Referencia a los diferentes fragments de mobile_navigation-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tren"
+            android:icon="@drawable/train_21"
+            android:title="@string/trenes" />
+        <item
+            android:id="@+id/nav_estacion"
+            android:icon="@drawable/home_icon"
+            android:title="@string/estaciones" />
+        <item
+            android:id="@+id/nav_empleado"
+            android:icon="@drawable/tools_icon"
+            android:title="@string/empleados" />
+    </group>
+</menu>

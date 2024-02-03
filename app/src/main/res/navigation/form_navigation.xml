@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/form_navigation.xml"
+    app:startDestination="@id/trenFormFragment">
+
+
+    <fragment
+        android:id="@+id/trenFormFragment"
+        android:name="com.example.proyectofinal.ui.tren.TrenFormFragment"
+        android:label="Añadir Tren"
+        tools:layout="@layout/fragment_tren_form" />
+    <fragment
+        android:id="@+id/estacionFormFragment"
+        android:name="com.example.proyectofinal.ui.estacion.EstacionFormFragment"
+        android:label="Añadir Estación"
+        tools:layout="@layout/fragment_estacion_form" />
+    <fragment
+        android:id="@+id/empleadoFormFragment"
+        android:name="com.example.proyectofinal.ui.empleado.EmpleadoFormFragment"
+        android:label="Añadir Empleado"
+        tools:layout="@layout/fragment_empleado_form" />
+</navigation>

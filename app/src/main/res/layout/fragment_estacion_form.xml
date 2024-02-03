@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.estacion.EstacionFormFragment">
+
+    <EditText
+        android:id="@+id/textEstacionNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="nombre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/textEstacionCiudad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="ciudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEstacionNombre" />
+
+    <Button
+        android:id="@+id/submitEstacionButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Añadir"
+        app:layout_constraintEnd_toStartOf="@+id/cancelEstacionButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEstacionCiudad" />
+    <Button
+        android:id="@+id/cancelEstacionButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/submitEstacionButton"
+        app:layout_constraintTop_toBottomOf="@+id/textEstacionCiudad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

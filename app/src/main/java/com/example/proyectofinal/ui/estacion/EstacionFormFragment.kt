@@ -63,7 +63,7 @@ class EstacionFormFragment : Fragment() {
 
         binding.submitEstacionButton.setOnClickListener {
             id?.let {
-                val item = Estacion(id, nombre.toString(), ciudad.toString())
+                val item = Estacion(it, nombre.toString(), ciudad.toString())
                 estacionViewModel.actualizarEstacion(item)
             } ?: estacionViewModel.insertarEstacion(Estacion(null, nombre.toString(), ciudad.toString()))
             ciudad.clear()

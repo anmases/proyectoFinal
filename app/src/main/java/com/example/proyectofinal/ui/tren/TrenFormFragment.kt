@@ -62,7 +62,7 @@ class TrenFormFragment : Fragment() {
 //Maneja la lógica del botón guardar:
         binding.submitTrenButton.setOnClickListener {
           id?.let {
-              val item = Tren(id, modelo.toString(), capacidad.toString().toInt())
+              val item = Tren(it, modelo.toString(), capacidad.toString().toInt())
               trenViewModel.actualizarTren(item)
             } ?: trenViewModel.insertarTren(Tren(null, modelo.toString(), capacidad.toString().toInt()))
             modelo.clear()

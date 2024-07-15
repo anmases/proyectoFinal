@@ -4,6 +4,7 @@ import android.util.Log
 import com.example.proyectofinal.models.Empleado
 import com.example.proyectofinal.models.Estacion
 import com.example.proyectofinal.models.Tren
+import com.example.proyectofinal.other
 import com.google.gson.JsonObject
 import retrofit2.Call
 import retrofit2.Callback
@@ -15,7 +16,7 @@ import retrofit2.create
 
 class Repository {
     companion object{
-        private val retrofit: Retrofit = Retrofit.Builder().baseUrl("http://10.0.2.2").addConverterFactory(GsonConverterFactory.create()).build()
+        private val retrofit: Retrofit = Retrofit.Builder().baseUrl(other).addConverterFactory(GsonConverterFactory.create()).build()
         val userApi = retrofit.create<ApiClient>()
 
 /***********************************LISTAR******************************************************/
